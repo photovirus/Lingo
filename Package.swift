@@ -1,9 +1,12 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.7
 
 import PackageDescription
 
 let package = Package(
     name: "Lingo",
+    platforms: [
+        .macOS(.v13)
+    ],
     products: [
         .library(name: "Lingo", targets: ["Lingo"])
     ],
